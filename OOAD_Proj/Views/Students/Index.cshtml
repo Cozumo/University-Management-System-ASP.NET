@@ -1,0 +1,78 @@
+﻿@model IEnumerable<OOAD_Proj.Models.Student>
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.S_id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.S_pass)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.S_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.S_fees)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.S_cgpa)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.S_major)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Department.D_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_pass)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_fees)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_cgpa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.S_major)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Department.D_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester.Semester_name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.S_id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.S_id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.S_id })
+            </td>
+        </tr>
+    }
+
+</table>

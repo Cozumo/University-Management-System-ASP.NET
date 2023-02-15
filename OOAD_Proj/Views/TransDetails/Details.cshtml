@@ -1,0 +1,42 @@
+﻿@model OOAD_Proj.Models.TransDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TransDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.trans_details)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trans_details)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.trans_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.trans_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student1.S_pass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student1.S_pass)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.trans_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

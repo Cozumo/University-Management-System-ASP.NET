@@ -1,0 +1,40 @@
+﻿@model IEnumerable<OOAD_Proj.Models.AssingedCourse>
+
+@{
+    ViewBag.Title = "TeacherView";
+}
+
+<h2>Assigned Courses</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Acourse_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course1.course_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teacher1.T_id)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        if(Session["Username"] == Html.DisplayFor(modelItem => item.Teacher1.T_id))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Acourse_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Course1.course_name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Teacher1.T_id)
+                </td>
+            </tr>
+        }    
+    }
+
+</table>

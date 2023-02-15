@@ -1,0 +1,50 @@
+﻿@model OOAD_Proj.Models.AssingedCourse
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AssingedCourse</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Acourse_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Acourse_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course1.course_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course1.course_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Student1.S_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Student1.S_id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teacher1.T_id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teacher1.T_id)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ACourses_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

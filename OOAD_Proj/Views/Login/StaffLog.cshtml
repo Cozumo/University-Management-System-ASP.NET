@@ -1,0 +1,27 @@
+﻿@model OOAD_Proj.Models.Staff
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("StaffLog", "Login", FormMethod.Post))
+{
+    @Html.LabelFor(model => model.staff_id, new { htmlAttributes = new { @class = "control-label col-md-2" } })
+    <br />
+    @Html.TextBoxFor(model => model.staff_id, new { htmlAttributes = new { @class = "form-control" } })
+    <br>
+    <br>
+    @Html.LabelFor(model => model.staff_pass, new { htmlAttributes = new { @class = "control-label col-md-2" } })
+    <br />
+    @Html.PasswordFor(model => model.staff_pass, new { htmlAttributes = new { @class = "form-control" } })
+    <br>
+    <br>
+
+
+    <input type="submit" value="Click to Login" name="StaffLog" class="btn btn-default"/>
+
+    @ViewBag.Errormsg
+    <br />
+}

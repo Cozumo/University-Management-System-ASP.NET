@@ -1,0 +1,58 @@
+﻿@model OOAD_Proj.Models.Staff
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Staff</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.staff_pass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staff_pass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staff_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staff_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staff_salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staff_salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.staff_dty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.staff_dty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.D_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.D_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.staff_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

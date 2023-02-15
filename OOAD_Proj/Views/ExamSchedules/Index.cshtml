@@ -1,0 +1,51 @@
+﻿@model IEnumerable<OOAD_Proj.Models.ExamSchedule>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ex_Sem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ex_courses)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course1.course_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ex_Sem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ex_courses)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Course1.course_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Semester.Semester_name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Ex_Scd_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Ex_Scd_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Ex_Scd_id })
+        </td>
+    </tr>
+}
+
+</table>

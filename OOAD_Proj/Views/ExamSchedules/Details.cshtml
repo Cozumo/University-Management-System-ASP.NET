@@ -1,0 +1,50 @@
+﻿@model OOAD_Proj.Models.ExamSchedule
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ExamSchedule</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Ex_Sem)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ex_Sem)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ex_courses)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ex_courses)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Course1.course_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Course1.course_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester.Semester_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Ex_Scd_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

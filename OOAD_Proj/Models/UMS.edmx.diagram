@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a10fe03ec2b744ec98e9250f5cc6f4a4" Name="Diagram1">
+        <EntityTypeShape EntityType="DB_proj_OOADModel.AssingedCourse" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.ClassSchedule" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Course" Width="1.5" PointX="3" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Department" Width="1.5" PointX="0.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Event" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.ExamSchedule" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Semester" Width="1.5" PointX="3" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Staff" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Student" Width="1.5" PointX="8" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.Teacher" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DB_proj_OOADModel.TransDetail" Width="1.5" PointX="10.25" PointY="10.25" IsExpanded="true" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__AssingedC__Cours__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__AssingedC__Stude__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__AssingedC__Teach__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__ClassSche__Cours__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__ClassSche__S_sem__6754599E" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Course__course_d__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__ExamSched__Cours__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Staff__staff_dep__5CD6CB2B" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Student__S_depar__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Teacher__T_Depar__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Event__S_semeste__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__ExamSched__S_sem__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__Student__S_semes__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="DB_proj_OOADModel.FK__TransDeta__Stude__6A30C649" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

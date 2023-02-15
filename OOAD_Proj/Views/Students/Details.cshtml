@@ -1,0 +1,74 @@
+﻿@model OOAD_Proj.Models.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.S_pass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_pass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_fees)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_fees)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_cgpa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_cgpa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.S_major)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.S_major)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department.D_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department.D_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester.Semester_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.S_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

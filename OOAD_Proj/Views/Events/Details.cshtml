@@ -1,0 +1,42 @@
+﻿@model OOAD_Proj.Models.Event
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Event</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.e_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.e_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.e_desc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.e_desc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Semester.Semester_name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.e_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

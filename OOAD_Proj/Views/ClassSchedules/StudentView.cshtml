@@ -1,0 +1,37 @@
+﻿@model IEnumerable<OOAD_Proj.Models.ClassSchedule>
+
+@{
+    ViewBag.Title = "StudentView";
+}
+
+<h2>Class Schedule</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.scd_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Course1.course_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Semester.Semester_name)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.scd_date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course1.course_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Semester.Semester_name)
+            </td>
+        </tr>
+    }
+
+</table>

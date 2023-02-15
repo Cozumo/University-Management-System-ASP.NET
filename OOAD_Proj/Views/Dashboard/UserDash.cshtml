@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "UserDash";
+}
+
+<h2>Student Portal</h2>
+
+<br/>
+<div style="height:300px">
+    <div style="width:25%;margin:0;float:left">
+        <form action="~/Students/Studentinfo" style="padding:10px">
+            <input type="submit" value="Student info" class="btn btn-default" />
+        </form>
+        <form action="~/Courses/StudentIndex" style="padding:10px">
+            <input type="submit" value="Courses" class="btn btn-default" />
+        </form>
+        <form action="~/ExamSchedules/StudentView" style="padding:10px">
+            <input type="submit" value="Exam Schedule" class="btn btn-default" />
+        </form>
+        <form action="~/ClassSchedules/StudentView" style="padding:10px">
+            <input type="submit" value="Class Schedule" class="btn btn-default" />
+        </form>
+    </div>
+    <div style="width:25%;margin:0;float:left">
+        <form action="~/Events/StudentView" style="padding:10px">
+            <input type="submit" value="Event Info" class="btn btn-default" />
+        </form>
+        <form action="~/TransDetails/StudentView" style="padding:10px">
+            <input type="submit" value="Transaction Info" class="btn btn-default" />
+        </form>
+        <form action="~/AssingedCourses/StudentView" style="padding:10px">
+            <input type="submit" value="Course Registered" class="btn btn-default" />
+        </form>
+        <form action="~/Home/Index" style="padding:10px">
+            <input type="submit" value="Logout" class="btn btn-default" />
+        </form>
+    </div>
+</div>
